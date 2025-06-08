@@ -4,6 +4,7 @@
 
 ![App Screenshot](screenshots/fred1.png)
 ![App Screenshot](screenshots/fred2.png)
+
 ## Основные возможности
 
 1. **Загрузка данных** напрямую из FRED API
