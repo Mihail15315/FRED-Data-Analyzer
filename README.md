@@ -16,10 +16,13 @@
 2. Установите зависимости:
 ```bash
 pip install pandas numpy statsmodels scipy matplotlib fredapi
+```
 3. Получите API ключ на FRED https://fred.stlouisfed.org/docs/api/api_key.html
 4. Вставьте ключ в код:
 ```bash
 fred = Fred(api_key='ваш_ключ_здесь')
+```
 5. Запустите программу:
 ```bash
 python df5.py
+```
