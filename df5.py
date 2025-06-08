@@ -5,8 +5,12 @@ import statsmodels.api as sm
 from scipy import stats
 from fredapi import Fred
 import matplotlib.pyplot as plt
-qt_plugin_path = r"C:\Users\Mike\AppData\Local\Programs\Python\Python310\Lib\site-packages\PyQt5\Qt5\plugins"
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = qt_plugin_path
+from PyQt5 import QtCore
+try:
+    qt_plugin_path = os.path.join(os.path.dirname(QtCore.__file__), "Qt", "plugins")
+    os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = qt_plugin_path
+except ImportError:
+    print("PyQt5 не установлен, графики могут не отображаться")
 # Инициализация FRED API (нужен ваш API ключ)
 fred = Fred(api_key='8d726355d6964bb1ff17ede756a6d773')
 
