@@ -1,6 +1,7 @@
 # FRED Data Analyzer
 
 Программа для анализа линейных зависимостей между экономическими показателями из базы данных FRED (Federal Reserve Economic Data).
+
 ![App Screenshot](screenshots/fred1.png)
 ![App Screenshot](screenshots/fred2.png)
 ## Основные возможности
